@@ -9,7 +9,8 @@ JavaFX用バージョン情報表示ウィンドウ生成ライブラリ
 - Since        : Mar 06, 2017
 - Last Changed : Mar 06, 2017
 
-## 使い方
+使い方
+--------------------------------------------------------------------------------
 
 インスタンス生成時に必須プロパティとして、アプリ名とアプリのバージョンを渡しま
 す。これらのプロパティは`null`や空文字列を受け付けません。それらが渡されると例外
@@ -24,7 +25,7 @@ AboutStageのインスタンスが生成されます。
 ```java
 import jiro.javafx.stage.AboutStage;
 
-AboutStage aboutStage = AboutStage.Builder(title, version)
+AboutStage aboutStage = AboutStage.Builder("App Title", "App Version")
   .author("Author Name")
   .blog("Blog Name")
   .blogUrl("http://www.ownblog.com")
@@ -36,7 +37,8 @@ AboutStage aboutStage = AboutStage.Builder(title, version)
 aboutStage.showAndWait();
 ```
 
-## 更新履歴
+更新履歴
+--------------------------------------------------------------------------------
 
 Ver1.0.0 : 2017/03/06  
 - ライブラリ公開
