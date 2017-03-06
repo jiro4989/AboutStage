@@ -14,20 +14,6 @@ import javafx.scene.image.*;
 
 /**
  * <p> {@link AboutStage}のコントローラクラス。</p>
- *
- * @param appIconImageView    アプリアイコン
- * @param gridPane            各種ラベルやHyperlinkを並べているレイアウト
- * @param appDescLabel        アプリ説明
- * @param appLabel            アプリ名
- * @param authorHBox          作者情報保持レイアウト
- * @param authorDescLabel     作者説明
- * @param authorLabel         作者名
- * @param authorIconImageView 作者アイコン画像
- * @param blogHBox            ブログ情報保持レイアウト
- * @param blogDescLabel       ブログ説明
- * @param blogLabel           ブログ名
- * @param blogHyperlink       ブログハイパーリンク
- * @param closeButton         閉じるボタン
  */
 public class AboutStageController {
 

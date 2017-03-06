@@ -32,19 +32,14 @@ import javafx.stage.*;
  * 合、インスタンス生成時のオプション変更後のウィンドウ呼び出し以外に何かメソッ
  * ドを呼び出したり設定を変更する必要はない。
  * </p>
+ *
+ * @author Jiro
+ * @version 1.0.0
  */
 public class AboutStage extends Stage {
 
   /**
    * AboutStageのインスタンス生成を行うためのBuilderクラス
-   *
-   * @param title       アプリ名
-   * @param author      作者名
-   * @param blog        ブログ名
-   * @param blogUrl     ブログURL
-   * @param css         StageのレイアウトCSSのURL
-   * @param appIcon     アプリのアイコンURL
-   * @param authorIcon  作者のアイコンURL
    */
   public static class Builder {//{{{
 
@@ -57,11 +52,15 @@ public class AboutStage extends Stage {
     private String authorIcon = null;
 
     /**
-     * <p>Builderインスタンス生成</p>
+     * <p>Builderインスタンス生成。</p>
+     * <p>
+     * パラメータは必須プロパティなのでnull, 空文字列を受け付けない。<br>
+     * それらが渡された場合、NullPointerException, または
+     * IllegalArgumentExceptionを返す。
+     * </p>
      *
      * @param aTitle    アプリ名         ( null, 空文字列不可 )
      * @param aVersion  アプリバージョン ( null, 空文字列不可 )
-     * @return Builderインスタンス
      */
     public Builder(String aTitle, String aVersion) {//{{{
 
