@@ -34,7 +34,7 @@ import javafx.stage.*;
  * </p>
  *
  * @author Jiro
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class AboutStage extends Stage {
 
@@ -164,7 +164,7 @@ public class AboutStage extends Stage {
     try {
 
       BorderPane root = (BorderPane) loader.load();
-      Scene scene = new Scene(root);
+      Scene scene = new Scene(root, 650, 170);
       if (css != null) scene.getStylesheets().add(getClass().getResource(css).toExternalForm());
       setScene(scene);
 
@@ -172,7 +172,6 @@ public class AboutStage extends Stage {
       initModality(Modality.APPLICATION_MODAL);
       initStyle(StageStyle.UTILITY);
       changeTitle();
-      sizeToScene();
 
       AboutStageController controller = (AboutStageController) loader.getController();
       controller.setAppName(title);
