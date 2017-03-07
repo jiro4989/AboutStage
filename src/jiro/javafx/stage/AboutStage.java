@@ -164,7 +164,7 @@ public class AboutStage extends Stage {
     try {
 
       BorderPane root = (BorderPane) loader.load();
-      Scene scene = new Scene(root, 650, 170);
+      Scene scene = new Scene(root, 650, 200);
       if (css != null) scene.getStylesheets().add(getClass().getResource(css).toExternalForm());
       setScene(scene);
 
