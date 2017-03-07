@@ -3,7 +3,7 @@ AboutStage
 
 JavaFX用バージョン情報表示ウィンドウ生成ライブラリ
 
-- Version      : 1.0.0
+- Version      : 1.0.1
 - Java Version : 1.8.0_121
 - Author       : 次郎 (Jiro)
 - Since        : Mar 06, 2017
@@ -36,9 +36,3 @@ AboutStage aboutStage = AboutStage.Builder("App Title", "App Version")
 
 aboutStage.showAndWait();
 ```
-
-更新履歴
---------------------------------------------------------------------------------
-
-Ver1.0.0 : 2017/03/06  
-- ライブラリ公開
